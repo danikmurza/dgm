@@ -2,9 +2,9 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig authType="PASSWORD" host="74.208.25.179" id="180e7db8-44b8-4545-bfba-f353229d9aa9" port="22" nameFormat="DESCRIPTIVE" username="root" />
-      <sshConfig authType="PASSWORD" host="74.208.89.79" id="c4414e60-ef05-446f-ab0a-9a474e677ee6" port="22" nameFormat="DESCRIPTIVE" username="root" />
-      <sshConfig host="54.209.147.50" id="24af8cd0-a3dd-40fa-b3cf-faa3cbea1c3f" keyPath="C:\Users\daniy\Downloads\LightsailDefaultKey-us-east-1.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu" />
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="74.208.25.179" id="180e7db8-44b8-4545-bfba-f353229d9aa9" port="22" nameFormat="DESCRIPTIVE" username="root" />
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="74.208.89.79" id="c4414e60-ef05-446f-ab0a-9a474e677ee6" port="22" nameFormat="DESCRIPTIVE" username="root" />
+      <sshConfig connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="54.159.157.229" id="f69b40f3-1ed6-48ff-aca1-f034c3231c1f" keyPath="C:\Users\daniy\Downloads\LightsailDefaultKey-us-east-1.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu" />
     </configs>
   </component>
 </project>

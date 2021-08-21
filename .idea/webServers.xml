@@ -16,8 +16,8 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
-      <webServer id="248cd217-718a-4420-9714-5c41bb1ef4d8" name="dgmexpress.net">
-        <fileTransfer accessType="SFTP" host="54.209.147.50" port="22" sshConfigId="24af8cd0-a3dd-40fa-b3cf-faa3cbea1c3f" sshConfig="ubuntu@54.209.147.50:22 key" keyPair="true">
+      <webServer id="0b96f1c2-f1d4-48a8-9715-b981216cb255" name="dgmexpress.net">
+        <fileTransfer accessType="SFTP" host="54.159.157.229" port="22" sshConfigId="f69b40f3-1ed6-48ff-aca1-f034c3231c1f" sshConfig="ubuntu@54.159.157.229:22 key" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
