@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Roadside Assistance</title>
+</head>
+
+<body>
+{{#if form}}
+<form action="/order" method="POST">
+    <div class="form  mb-3">
+        <div class="row log">
+            <div class="col-6">
+                <img src="https://dgmimages.s3.us-east-2.amazonaws.com/images/Logotip.png" width="150" height="100"
+                     class="m-auto book-logo" alt="logo"/>
+            </div>
+            <div class="col-6 mt-4 main mb-3">
+                <h6>DGM Express</h6>
+                <p class="mb-0">Address: 739 E Independence dr, Palatine, IL 60074</p>
+                <p class="tel:312-966-5858 mb-0">Phone: 312-966-5464</p>
+                <p class="mb-0">Email: dgmmessage@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="card border-primary mb-3 cards">
+            <div class="card-header" role="alert">
+                Request Service
+            </div>
+            <div class="card-body">
+                <div class="col-lg-12 ">
+                    <form class="needs-validation" noValidate>
+                        <div class="row g-3">
+                            <div class="col-lg-6 fo mt-1">
+
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control input" id="firstName"
+                                                                      name="firstName"/>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-1">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control input"
+                                       id="lastName" name="lastName">
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+                            <div class="col-12 mt-0">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control input"
+                                       id="email" placeholder="you@example.com" name="email">
+                            </div>
+                            <div class="col-12 mt-0">
+                                <label class="form-label mb-0">Phone</label>
+                                <label for="tel">Phone Number</label>
+                                <input type="tel" class="form-control input" id="tel"
+                                       placeholder="123-456-7890" name="tel">
+                            </div>
+                            <div class="col-12 mt-0" >
+                                <label class="form-label mb-0">Reason Call required</label>
+                                    <select class="form-select input" name="reason">
+                                        <option selected name="reason">Choose...</option>
+                                        <option value="jump-start">Jump Start</option>
+                                        <option value="gas-delivery">Gas Delivery</option>
+                                        <option value="tire-service">Tire Service</option>
+                                        <option value="lock-out">Lock Out</option>
+                                        <option value="replacement-battery">Replacement Battery</option>
+                                        <option value="car-inspection">Car is not starting Inspection Service</option>
+                                    </select>
+                            </div>
+                            <div class="col-12 mt-0">
+                                <label for="address">Vehicle Location</label>
+                                <input type="text" class="form-control input" id="address"
+                                       name="vehicleLocation"
+                                       placeholder="1234 Main St, City, State, Zipcode">
+                            </div>
+                            <div class="col-12 mt-0">
+                                <label for="license-plate">License Plate</label>
+                                <input type="text" class="form-control input"
+                                       id="license-plate" placeholder="License Plate"
+                                       name="licensePlate">
+                            </div>
+                            <div class="col-12 mt-0">
+                                <label for="year">Vehicle Year</label>
+                                <input type="text" class="form-control input" id="year"
+                                       placeholder="Year" name="vehicleYear">
+                            </div>
+                            <div class="col-12 mt-0">
+                                <label for="make">Make</label>
+                                <input type="text" class="form-control input" id="make"
+                                       placeholder="Make" name="make">
+                            </div>
+                            <div class="col-12 mt-0">
+                                <label for="model">Model</label>
+                                <input type="text" class="form-control input" id="model"
+                                       placeholder="Model" name="model">
+                            </div>
+                            <div class="col-12 mt-0">
+                                <label for="color">Color</label>
+                                <input type="text" class="form-control input" id="color"
+                                       placeholder="Color" name="color">
+                            </div>
+                        </div>
+                        <hr class="my-4"/>
+                        <button class="w-100 btn btn-primary btn-lg mb-4  booking-button"
+                                type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{{else}}
+<div class="container form ">
+    <div class="row">
+        <div class="col-4">
+            <img src="https://dgmimages.s3.us-east-2.amazonaws.com/images/Logotip.png" width="150" height="100"
+                 class="ml-5 book-logo" alt="logo"/>
+        </div>
+        <div class="col-6 mt-4 main">
+            <h6>DGM Express</h6>
+            <p>Address: 739 E Independence dr, Palatine, IL 60074</p>
+            <p class="tel:312-966-5464">Phone: 312-966-5464</p>
+            <p>Email: dgmexpressinc@gmail.com</p>
+        </div>
+    </div>
+    <div class="card text-white bg-primary mb-3 mt-4">
+        <div class="card-header text-md-center">
+            Request Complete
+        </div>
+        <div class="card-body">
+            <h6 class="card-title text-md-center">Thank You!</h6>
+            <p class="card-text text">
+                You have successfully requested a service from DGM Express. If you have questions or concerns
+                please call us at 312-966-5464.</p>
+        </div>
+    </div>
+</div>
+{{/if}}
+
+</body>
+
+</html>
